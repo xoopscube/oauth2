@@ -31,6 +31,9 @@ License | GPL
 
 -----
 
+<p align="center">
+<img src="https://repository-images.githubusercontent.com/999143795/0123844f-c588-4720-ad51-e2f82f4e4397" width="100%" alt="Oauth2 module for XCL" />
+</p>
 
 ## Features
 
