@@ -1,0 +1,17 @@
+<{if $block.oauth_message}>
+    <div class="alert alert-info"><{$block.oauth_message}></div>
+<{else}>
+    <{if $block.oauth_block_title}><h5><{$block.oauth_block_title}></h5><{/if}>
+    <div class="oauth-providers-list-block">
+        <{foreach item=provider from=$block.oauth_providers}>
+            <div class="oauth-provider-block" style="margin-bottom: 5px;">
+                <a href="<{$provider.url}>" class="btn btn-sm btn-outline-secondary btn-block">
+                    <{if $provider.icon}>
+                        <img src="<{$provider.icon}>" alt="<{$provider.name}> icon" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">
+                    <{/if}>
+                    <{$provider.name|escape:'html'}>
+                </a>
+            </div>
+        <{/foreach}>
+    </div>
+<{/if}>
